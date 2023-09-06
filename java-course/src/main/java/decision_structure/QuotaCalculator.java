@@ -11,7 +11,13 @@ public class QuotaCalculator {
         Scanner scanner = new Scanner(System.in);
         int sales = scanner.nextInt();
 
-        if()
+        if(sales >= quota){
+            System.out.println("Congrats! You've met your quota");
+        }else{
+            int salesShort = quota - sales;
+            System.out.println("You did not make your quota." +
+                    "You were " + salesShort + " sales short.");
+        }
 
         /* My attempt before watching the video
 
